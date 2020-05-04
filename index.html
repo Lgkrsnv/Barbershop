@@ -6,38 +6,54 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header>
-      <nav>
-        <img class='logo' src"logo">
-        <ul>
-          <li><a href='info'>Информация</a></li>
-          <li><a href='news'>Новости</a></li>
-          <li><a href='prices'>Прайс-лист</a></li>
-          <li><a href='shop'>Магазин</a></li>
-          <li><a href='contacs'>Контакты</a></li>
-          <li>Вход</li>
+    <header class='main-header'>
+      <nav class='main-navigation'>
+        <img class='logo' src"#logo">
+        <ul class='site-navigation'>
+          <li><a href='#info.html'>Информация</a></li>
+          <li><a href='#news.html'>Новости</a></li>
+          <li><a href='#prices.html'>Прайс-лист</a></li>
+          <li><a href='#shop.html'>Магазин</a></li>
+          <li><a href='#contacs.html'>Контакты</a></li>
+        </ul>
+          <ul class='user-navigation'>
+            <li class='login-link'>Вход</li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class='visually-hidden'>Барбершоп "Бородинский"</h1>
       <section class='advantages'>
         <h2 class='visually-hidden'>Преимущества</h2>
-        <h3>Быстро</h3>
-        <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
-        <h3>Круто</h3>
-        <p>Забудьте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
-        <h3>Дорого</h3>
-        <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
-
+      <ul class='advantages-list'>
+        <li class='advantages-item'>
+          <h3>Быстро</h3>
+          <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
+        </li>
+        <li class='advantages-item'>
+          <h3>Круто</h3>
+          <p>Забудьте, как Вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
+      </li>
+        <li class='advantages-item'>
+          <h3>Дорого</h3>
+          <p>Наши мастера - профессионалы своего дела и не могут стоить дешево. К тому же, разве цена не дает определенный статус?</p>
+      </li>
+      </ul>
       </section>
+
       <section class='news'>
         <h2>Новости</h2>
-        <p>Нам наконец завезли Ягермейстер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
-        <time datetime="2020-01-11">11 января</time>
-        <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
-        <time datetime="2020-01-18">18 января</time>
-        <a href='news'>Все новости</a>
+        <ul class='news-list'>
+          <li class='news-item'>
+            <p>Нам наконец завезли Ягермейстер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
+            <time datetime="2020-01-11">11 января</time>
+          </li>
+          <li class='news-item'>
+            <p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+            <time datetime="2020-01-18">18 января</time>
+          </li>
+        </ul>
+        <a class='button' href='#news.html'>Все новости</a>
       </section>
 
       <section class='gallery'>
