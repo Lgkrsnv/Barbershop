@@ -70,13 +70,15 @@
 
             <section class='gallery'>
                 <h2>Фотогалерея</h2>
-                <figure class="gallery-photos">
-                    <a href="interior">
-                        <img src='img/studio.jpg' width='286' height="184" alt="Интерьер">
-                    </a>
-                </figure>
-                <span class="button gallery-button galary-button-back">Назад</span>
-                <span class="button gallery-button galary-button-next">Вперед</span>
+                <div class="gallery-container">
+                    <figure class="gallery-content">
+                        <a href="interior">
+                            <img src='img/studio.jpg' width='286' height="184" alt="Интерьер">
+                        </a>
+                    </figure>
+                    <span class="button gallery-button gallery-button-back disabled">Назад</span>
+                    <span class="button gallery-button gallery-button-next">Вперед</span>
+                </div>
             </section>
         </div>
         <div class="index-columns">
@@ -94,18 +96,26 @@
 
             <section class='appointment'>
                 <h2>Записаться</h2>
-                <p>
+                <p class="appointment-info">
                     Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони
                 </p>
-                <form action="#" method="POST" class="appointment-item">
-                    <label for="date">Дата</label>
-                    <input type="text" id="date" name="date" placeholder="08.10.2020"><br>
-                    <label for="time">Время</label>
-                    <input type="text" id="time" name="time" placeholder="10:00"><br>
-                    <label for="name">Ваше имя</label>
-                    <input type="text" id="name" name="name" placeholder="Борода"><br>
-                    <label for="tel">Телефон</label>
-                    <input type="tel" id="tel" name="tel" placeholder="+7 123 456-45-67"><br>
+                <form action="#" method="POST" class="appointment-form">
+                    <p class="appointment-item">
+                        <label for="appointment-date">Дата</label>
+                        <input type="text" id="appointment-date" name="date" placeholder="08.10.2020"><br>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-time">Время</label>
+                        <input type="text" id="appointment-time" name="time" placeholder="10:00"><br>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-name">Ваше имя</label>
+                        <input type="text" id="appointment-name" name="name" placeholder="Борода"><br>
+                    </p>
+                    <p class="appointment-item">
+                        <label for="appointment-phone">Телефон</label>
+                        <input type="tel" id="appointment-phone" name="phone" placeholder="+7 123 456-45-67"><br>
+                    </p>
                     <button type="submit" class="button">Отправить</button>
                 </form>
             </section>
@@ -122,9 +132,9 @@
             <div class='footer-social'>
                 <b>Давайте дружить!</b>
                 <ul>
-                    <li><a class='social-button' href='#'>Вконтакте</a></li>
-                    <li><a class='social-button' href='№'>Фейсбук</a></li>
-                    <li><a class='social-button' href='№'>Инстаграм</a></li>
+                    <li><a class='social-button' href='#'><span class="visually-hidden">Вконтакте</span></a></li>
+                    <li><a class='social-button' href='№'><span class="visually-hidden">Фейсбук</span></a></li>
+                    <li><a class='social-button' href='№'><span class="visually-hidden">Инстаграм</span></a></li>
                 </ul>
             </div>
 
